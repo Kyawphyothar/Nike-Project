@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
+body {
+  background-color: #e9eaebe9;
+}
+
+.nav-logo {
+  width: 100px;
+}
+
+.nav-link-custom {
+  position: relative;
+}
+
+.nav-link-custom::after {
+  content: "";
+  position: absolute;
+  height: 1.5px;
+  top: 2rem;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(13, 223, 223);
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center;
+}
+
+.nav-link-custom:hover {
+  color: rgb(0, 195, 255);
+}
+.nav-link-custom:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+.nav-btn {
+  border: 2px solid cyan;
+  padding: 10px 25px;
+  font-weight: bold;
+  font-size: large;
+  margin-right: 10px;
+  border-radius: 12px;
+  background: transparent;
+  -webkit-transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+  transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+}
+
+.nav-btn:hover {
+  color: white;
+  background-color: #5bc5e5;
+}
+
+.home-content {
+  padding-top: 50px;
+}
+
+.header-1 {
+  color: cyan;
+}
+
+.home-shop-button {
+  background: #513c36;
+  color: white;
+  border-radius: 10px;
+  padding: 15px 22px;
+  border: 2px solid #513c36;
+  font-size: large;
+  -webkit-transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+  transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+}
+
+.home-shop-button:hover {
+  background-color: transparent;
+  color: #513c36;
+}
+
+.top-img {
+  width: 500px;
+}
+
+.home-shop-button-sm {
+  background: #513c36;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 2px solid #513c36;
+  -webkit-transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+  transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+}
+
+.home-shop-button-sm:hover {
+  background-color: transparent;
+  color: #513c36;
+}
+
+.top-card {
+  width: 340px;
+  height: 400px;
+  background: #fff;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.top-card:hover {
+  transform: translateY(5px);
+}
+
+.top-card img {
+  border-radius: 15px 15px;
+}
+
+.top-card-content {
+  position: absolute;
+  bottom: 5px;
+  left: 16px;
+}
+
+.top-card-text {
+  color: #5bc5e5;
+  -webkit-transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+  transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+}
+.top-card-text:hover {
+  color: #513c36;
+}
+
+.top-sec-card {
+  width: 340px;
+  height: 404px;
+  background: #fff;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.top-sec-card:hover {
+  transform: translateY(5px);
+}
+.top-sec-card img {
+  border-radius: 15px;
+}
+
+.top-sec-card-content {
+  position: absolute;
+  bottom: 6px;
+  left: 16px;
+}
+
+.top-sec-card-text {
+  color: #5bc5e5;
+  -webkit-transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+  transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+}
+
+.top-sec-card-text:hover {
+  color: #513c36;
+}
+
+.new-arrival-card {
+  width: 330px;
+  height: 480px;
+  background: #fff;
+  transition: 0.5s;
+  border-radius: 15px;
+  position: relative;
+}
+
+.new-arrival-card img {
+  width: 330px;
+  height: 330px;
+  border-radius: 15px 15px 0 0;
+}
+
+.new-arrival-card:hover {
+  transform: translateY(5px);
+}
+
+.star-content {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  transition: 0.5s;
+}
+
+.title {
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  top: 3rem;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: cyan;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center;
+}
+
+.title:hover {
+  color: rgb(21, 180, 229);
+}
+.title:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+.product-card {
+  width: 350px;
+  height: 430px;
+  background: #fff;
+  border-radius: 15px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.product-card img {
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  background: transparent;
+}
+
+.product-card-content {
+  position: absolute;
+  bottom: 20px;
+  margin-left: 30px;
+}
+
+.product-card:hover {
+  transform: translateY(5px);
+}
+
+.product-shop-button-sm {
+  background: #513c36;
+  color: white;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  border: 2px solid #513c36;
+  -webkit-transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+  transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+}
+
+.product-shop-button-sm:hover {
+  background-color: transparent;
+  color: #513c36;
+}
+
+.service-card1 {
+  width: 300px;
+  height: 300px;
+  background: #fff;
+  position: relative;
+  border-radius: 15px;
+}
+
+.service-card1 img {
+  width: 180px;
+  margin-left: 25px;
+  transition: 0.5s;
+}
+
+.service-card1:hover img {
+  transform: translateY(5px);
+}
+
+.service-card2 {
+  width: 300px;
+  height: 300px;
+  background: #fff;
+  position: relative;
+  border-radius: 15px;
+}
+
+.service-card2 img {
+  width: 200px;
+  transition: 0.5s;
+  margin-left: 20px;
+}
+
+.service-card2:hover img {
+  transform: translateY(5px);
+}
+.service-card1-content {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.service-card2-content {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.about-logo {
+  width: 80px;
+}
+
+.text-content {
+  width: 80%;
+}
+
+.contact-card {
+  width: 300px;
+  height: 400px;
+  background: #5bc5e5eb;
+  border-radius: 15px;
+  position: relative;
+  -webkit-transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+  transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+.contact-card2 {
+  width: 300px;
+  height: 400px;
+  background: #5bc5e563;
+  border-radius: 15px;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  -webkit-transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+  transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+}
+
+.contact-card-content {
+  position: absolute;
+  top: 2.3rem;
+  right: 2rem;
+  left: 2rem;
+}
+
+.footer {
+  background: #e2e3e5;
+
+}
+.footer-link {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  -webkit-transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+  transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+}
+
+.footer-link:hover {
+  color: #5bc5e5;
+}
+
+.input-form{
+  border: 3px solid #5bc5e5;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.input-form::placeholder{
+  font-size: large;
+}
+
+.contact-form-btn{
+  color: white;
+  background: #5bc5e5;
+  padding: 8px 20px 8px 20px;
+  border-radius: 20px;
+  border: 1px solid #5bc5e5;
+  -webkit-transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+  transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+}
+
+.contact-form-btn:hover{
+  color: #5bc5e5;
+  border: 1px solid #5bc5e5;
+  background: transparent;
+}
+
+
+.login-form-image{
+  width: 650px;
+}
+
+.login-form-header{
+  font-family: 'Mogra', cursive;
+  font-size: 50px;
+}
+
+.login-for-pw{
+  color: black;
+
+}
+
+.login-for-pw:hover{
+  color: #5bc5e5;
+}
+
+.login-btn{
+  color: white;
+  width: 333px;
+  background: #5bc5e5;
+  padding: 8px 10px 8px 10px;
+  border: 1px solid #5bc5e5;
+  border-radius: 10px;
+  font-size: large;
+  -webkit-transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+  transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+}
+.login-btn:hover{
+  color: #5bc5e5;
+  border: 1px solid #5bc5e5;
+  background: transparent;
+}
+
+.register-btn{
+  color: white;
+  width: 423px;
+  background: #5bc5e5;
+  padding: 8px 10px 8px 10px;
+  border: 1px solid #5bc5e5;
+  border-radius: 10px;
+  font-size: large;
+  -webkit-transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+  transition: all 0.5s cubic-bezier(0.79, 0.33, 0.1, 0.66);
+}
+
+.register-btn:hover{
+  color: #5bc5e5;
+  border: 1px solid #5bc5e5;
+  background: transparent;
+}
